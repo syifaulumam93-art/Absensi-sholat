@@ -272,3 +272,23 @@ body{
     }
 
 }
+.logo{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
+
+.header h1{
+    margin:0;
+    font-size:32px;
+    color:#1A71B7;
+}
+
+.header h2{
+    margin-top:8px;
+    margin-bottom:15px;
+    font-size:18px;
+    font-weight:500;
+    color:#666;
+}

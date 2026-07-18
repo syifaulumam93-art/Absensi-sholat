@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi Sholat</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/html5-qrcode"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>🕌 Absensi Sholat</h1>
+            <p>Scan QR Code Kartu Pelajar</p>
+        </div>
+
+        <button id="scanButton" class="btn btn-scan">
+            📷 Scan QR Code
+        </button>
+
+        <div id="reader"></div>
+
+        <div class="card">
+
+            <div class="card-title">
+                Data Siswa
+            </div>
+
+            <div class="row">
+                <span>Barcode</span>
+                <strong id="barcode">-</strong>
+            </div>
+
+            <div class="row">
+                <span>Nama</span>
+                <strong id="nama">-</strong>
+            </div>
+
+            <div class="row">
+                <span>Kelas</span>
+                <strong id="kelas">-</strong>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-title">
+                Status Kehadiran
+            </div>
+
+            <label class="radio-item">
+                <input
+                    type="radio"
+                    name="status"
+                    value="Hadir"
+                    checked
+                >
+                Hadir
+            </label>
+
+            <label class="radio-item">
+                <input
+                    type="radio"
+                    name="status"
+                    value="Halangan"
+                >
+                Halangan
+            </label>
+
+        </div>
+
+        <button id="submitButton" class="btn btn-submit">
+            Kirim Absensi
+        </button>
+
+        <div id="message"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
